@@ -14,13 +14,13 @@ import java.util.Scanner;
  */
 
 public class Menus {
-
+	static Scanner input = new Scanner(System.in);
+	
 	public double mainMenu() {
-		Scanner input = new Scanner(System.in);
 		int choice;
 
 		Menus obj1 = new Menus();
-		Menus obj2 = new Menus();
+		
 
 		do {
 			System.out.println("========================================");
@@ -42,7 +42,7 @@ public class Menus {
 				break;
 
 			case 2:
-				obj2.distanceConversions();
+				obj1.distanceConversions();
 
 				break;
 
@@ -63,11 +63,9 @@ public class Menus {
 	}
 
 	public double volumeConversions() {
-		Scanner input = new Scanner(System.in);
 		int choice;
 		Conversions obj1 = new Conversions();
-		Conversions obj2 = new Conversions();
-		Menus obj3 = new Menus();
+		Menus obj2 = new Menus();
 
 		do {
 			System.out.println("========================================");
@@ -89,11 +87,11 @@ public class Menus {
 				break;
 
 			case 2:
-				obj2.tablespoonsToTeaspoons();
+				obj1.tablespoonsToTeaspoons();
 				break;
 
 			case 3:
-				obj3.mainMenu();
+				obj2.mainMenu();
 				break;
 			case 4:
 				System.out.println();
@@ -112,11 +110,9 @@ public class Menus {
 	}
 
 	public double distanceConversions() {
-		Scanner input = new Scanner(System.in);
 		int choice;
 		Conversions obj1 = new Conversions();
-		Conversions obj2 = new Conversions();
-		Menus obj3 = new Menus();
+		Menus obj2 = new Menus();
 
 		do {
 			System.out.println("========================================");
@@ -138,11 +134,11 @@ public class Menus {
 				break;
 
 			case 2:
-				obj2.feetToMeters();
+				obj1.feetToMeters();
 				break;
 
 			case 3:
-				obj3.mainMenu();
+				obj2.mainMenu();
 
 			case 4:
 				System.out.println();

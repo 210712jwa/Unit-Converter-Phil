@@ -12,10 +12,10 @@ import java.util.Scanner;
  *  
  */
 public class Conversions {
+	static Scanner input = new Scanner(System.in);
 
 	public double cupsToTeaspoons() {
 		System.out.print("Enter a number of Cups: ");
-		Scanner input = new Scanner(System.in);
 		double cups, teaspoons;
 		cups = input.nextDouble();
 		teaspoons = cups * 48;
@@ -26,7 +26,6 @@ public class Conversions {
 
 	public double tablespoonsToTeaspoons() {
 		System.out.print("Enter a number of Tablespoons: ");
-		Scanner input = new Scanner(System.in);
 		double tablespoons, teaspoons;
 		tablespoons = input.nextDouble();
 		teaspoons = tablespoons * 3;
@@ -36,7 +35,6 @@ public class Conversions {
 
 	public double milesToKilometers() {
 		System.out.print("Enter a number of Miles: ");
-		Scanner input = new Scanner(System.in);
 		double miles, kilometers;
 		miles = input.nextDouble();
 		kilometers = miles * 1.609344;
@@ -47,7 +45,6 @@ public class Conversions {
 
 	public double feetToMeters() {
 		System.out.print("Enter a number of Feet: ");
-		Scanner input = new Scanner(System.in);
 		double feet, meters;
 		feet = input.nextDouble();
 		meters = feet * 0.3048;
